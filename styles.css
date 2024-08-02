@@ -1,0 +1,42 @@
+/*---Font-Style---*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header > .logo-container{
+    color: red;
+}
+header > .logo-container h1{
+    font-style: italic;
+}
+
+header > nav{
+    background-color: aquamarine;
+    width: min(400px, 70%);
+    padding: 0 15px;
+}
+
+header > nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+header > nav ul li a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
