@@ -85,6 +85,7 @@ main{
 /*---hero-section-styles---*/
 .hero-section{
     width: 100%;
+    max-height: 260px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -126,7 +127,42 @@ main{
 
 .hero-image-container img{
     margin-left: 20%;
+    margin-top: 25px;
     border-radius: 50%;
+}
+
+/*---about-me-section-styles---*/
+
+.about-section{
+    width: 100%;
+    max-width: 1200px;
+    max-height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+
+}
+
+.about-section h2{
+    margin: 55px 0 15px 0;
+    color: greenyellow;
+}
+
+.about-textbox{
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    border: 2px solid greenyellow;
+    border-radius: 40px;
+}
+
+.about-section p{
+    padding: 20px 30px;
+
 }
 
 /*---footer-styles---*/
