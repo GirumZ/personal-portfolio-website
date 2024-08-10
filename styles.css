@@ -13,7 +13,7 @@ body{
 }
 /*----header-styles---*/
 header{
-    height: 100px;
+    min-height: 100px;
     width: 100%;
     max-width: 1200px;
     margin-left: auto;
@@ -80,6 +80,10 @@ header{
 /*---main-styles---*/
 main{
     flex: 1;
+}
+
+section{
+    margin-bottom: 20px;
 }
 
 /*---hero-section-styles---*/
@@ -163,6 +167,139 @@ main{
 .about-section p{
     padding: 20px 30px;
 
+}
+
+/*---skills-section---*/
+
+.skills-section{
+    width: 100%;
+    max-width: 1200px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white; 
+    
+}
+
+.skills-section h2{
+    color: greenyellow;
+    margin: 50px 0 25px 0;
+}
+
+.skills-container{
+    width: 80%;
+    height: fit-content;
+    max-height: 400px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.skills-title{
+    margin: 10px 0;
+}
+.skill-description{
+    width: 400px;
+    height: 40px;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.skill-progress{
+    width: 250px;
+    height: 10px;
+    border-radius: 8px;
+    background-color: rgb(206, 221, 221);
+}
+
+.progress{
+    width: 0;
+    height: 100%;
+    background-color: greenyellow;
+    transition: width 0.5s ease-in-out;
+}
+
+.left{
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.right{
+    margin-right: 10px;
+}
+
+/*---projects-section---*/
+
+.projects-section h2{
+    color: greenyellow;
+    margin: 50px 0 25px 0;
+}
+
+.projects-section{
+    width: 100%;
+    max-width: 1200px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projects-container{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-card{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.project-card h3{
+    text-align: left;
+}
+
+.project-card p{
+    align-self: self-start;
+    text-align: left;  
+}
+
+.project-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.project-card .project-btn-container button{
+    background-color: greenyellow;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 10px;
 }
 
 /*---footer-styles---*/
