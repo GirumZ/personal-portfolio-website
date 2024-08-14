@@ -325,7 +325,7 @@ section{
 
 .contact-container{
     width: 75%;
-    height: 150px;
+    height: 200px;
     display: flex;
     gap: 40px;
     justify-content: center;
@@ -340,11 +340,12 @@ section{
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    margin-left: 60px;
+       
 }
 
 .contact-address p{
-   margin-bottom: 5px; 
+   margin-bottom: 15px; 
 }
 
 .contact-address strong{
@@ -356,7 +357,13 @@ section{
     width: 50%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.contact-message h3{
+    color: greenyellow;
+    margin-bottom: 15px;
 }
 
 .message-form{
@@ -381,15 +388,19 @@ section{
 }
 
 .message-form input{
-    text-align: right;
+    
     height: 25px;
     width: 200px;
     border: 1px solid greenyellow;
     border-radius: 10px;
+    padding: 0 10px;
+    text-wrap: wrap;
 }
 
 #message{
-    height: 50px;
+    border: 1px solid greenyellow;
+    border-radius: 10px;
+    padding: 5px 5px;
 }
 
 
