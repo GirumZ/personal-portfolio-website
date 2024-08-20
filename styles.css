@@ -34,7 +34,7 @@ header{
     width: 100%;
 }
 
-nav{
+.header-navbar{
     max-width: 700px;
     flex: 1;
     margin-left: auto;
@@ -48,21 +48,21 @@ nav ul{
     align-items: center;
 }
 
-nav li{
+.header-navbar li {
     list-style: none;
     font-size: 1.2rem;
     transition: transform 0.3s ease;
 }
 
-nav li:hover{
+.header-navbar li:hover{
     transform: scale(1.2);
 }
 
-nav li:last-child{
+.header-navbar li:last-child{
     margin-left: auto;
 }
 
-nav button{
+.header-navbar button{
     padding: 0.5rem;
     border: 0;
     border-radius: 1rem;
@@ -73,9 +73,10 @@ nav button{
     
 }
 
-nav ul button:hover{
+.header-navbar ul button:hover{
     background-color: rgb(170, 255, 0);
     color: #003366;
+    cursor: pointer;
 }
 
 nav a{
@@ -91,7 +92,7 @@ nav a{
 }
 
 
-.horizontal-nav{
+.hide-on-mobile{
     display: block;
 }
 
@@ -153,4 +154,44 @@ nav a{
     .side-bar{
         width: 100%;
     }
+}
+
+main{
+    flex: 1;
+}
+/*-----FOOTER----*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-container{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-navbar{
+    width: 350px;
+}
+
+.footer-navbar li{
+    transition: transform 0.3s ease;
+}
+
+.footer-navbar li:hover{
+    transform: scale(1.1);
+}
+
+.footer-navbar a{
+    color: yellowgreen;
+}
+
+footer p{
+    font-size: 0.8rem;
+    color: darkgrey;
 }

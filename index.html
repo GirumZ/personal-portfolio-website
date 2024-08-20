@@ -11,7 +11,7 @@
         <div class="logo-container">
             <h1>Girum Zebene</h1>
         </div>
-        <nav>
+        <nav class="header-navbar">
             <ul class="side-bar">
                 <li onclick=hideSidebar() class="close-icon"><img src="images/back-icon.svg" alt="menu-icon" width="26px" height="26px"></li>
                 <li><a href="#">About Me</a></li>
@@ -32,16 +32,33 @@
     </header>
     <main>    
     </main>
+    <footer>
+        <h3>Girum Zebene</h3>
+        <div class="social-container">
+            <a href="#"><img src="images/linkedin-brands-solid.svg" alt="linkedin" width="35px" height="35px"></a>
+            <a href="#"><img src="images/github-brands-solid.svg" alt="linkedin" width="35px" height="35px"></a>
+            <a href="#"><img src="images/x-twitter-brands-solid.svg" alt="linkedin" width="35px" height="35px"></a>
+            <a href="#"><img src="images/youtube-brands-solid.svg" alt="linkedin" width="35px" height="35px"></a>
+        </div>
+        <nav class="footer-navbar">
+            <ul>
+                <li class="hide-on-mobile"><a href="#">Home</a></li>
+                <li class="hide-on-mobile"><a href="#">About Me</a></li>
+                <li class="hide-on-mobile"><a href="#">Skills</a></li>
+                <li class="hide-on-mobile"><a href="#">Projects</a></li>
+                <li class="hide-on-mobile"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy;copyright-2024 Girum Zebene - All rights reserved</p>
+    </footer>
     <script>
         const sidebar = document.querySelector('.side-bar');
          
         function showSidebar() {
-           
             sidebar.style.display = 'flex'
         }
 
         function hideSidebar() {
-           
             sidebar.style.display = 'none'
         }
     </script>
