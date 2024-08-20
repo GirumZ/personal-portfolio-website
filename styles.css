@@ -179,7 +179,12 @@ footer{
     width: 350px;
 }
 
+.footer-navbar ul{
+    display: flex;
+}
+
 .footer-navbar li{
+    list-style: none;
     transition: transform 0.3s ease;
 }
 
@@ -194,4 +199,23 @@ footer{
 footer p{
     font-size: 0.8rem;
     color: darkgrey;
+}
+
+.flex-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media(max-width: 500px){
+    .footer-navbar{
+        width: fit-content;
+    }
+    .footer-navbar ul{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
