@@ -41,7 +41,101 @@
             <div class="hero-image">
                 <img src="images/pro-image.webp" alt="" width="60%" height="auto">
             </div>
-        </section>    
+        </section> 
+        <section class="about-section">
+            <h2>A Little About Me</h2>
+            <div class="text-container">
+                <p>
+                    I'm Girum, a passionate software engineer with a background in mechanical engineering. 
+                    My journey from the world of mechanical design to the dynamic field of software development has been incredibly rewarding. 
+                    I specialize in web development, creating seamless and engaging online experiences. 
+                    I believe in the power of technology to transform ideas into reality, and I am dedicated to continuous learning and growth in this ever-evolving field. 
+                    Welcome to my personal space where I share my projects, insights, and love for all things tech.
+                </p>
+            </div>
+        </section> 
+        <section class="skills-section">
+            <h2>My skill set</h2>
+            <div class="skills-container">
+                
+                <div class="skill-description">
+                    <div class="skill-name left"><strong>JavaScript</strong></div>
+                    <div class="skill-progress right">
+                        <div class="progress"></div>
+                    </div>
+                    <p><strong class="skill-percentage right" id="progress-value">80%</strong></p>
+                </div>
+                <div class="skill-description">
+                    <div class="skill-name left"><strong>HTML</strong></div>
+                    <div class="skill-progress right">
+                        <div class="progress"></div>
+                    </div>
+                    <p><strong class="skill-percentage right" id="progress-value">75%</strong></p>
+                </div>
+                <div class="skill-description">
+                    <div class="skill-name left"><strong>CSS</strong></div>
+                    <div class="skill-progress right">
+                        <div class="progress"></div>
+                    </div>
+                    <p><strong class="skill-percentage right" id="progress-value">75%</strong></p>
+                </div>
+                <div class="skill-description">
+                    <div class="skill-name left"><strong>Python</strong></div>
+                    <div class="skill-progress right">
+                        <div class="progress"></div>
+                    </div>
+                    <p><strong class="skill-percentage right" id="progress-value">60%</strong></p>
+                </div>
+                <div class="skill-description">
+                    <div class="skill-name left"><strong>MySQL</strong></div>
+                    <div class="skill-progress right">
+                        <div class="progress"></div>
+                    </div>
+                    <p><strong class="skill-percentage right" id="progress-value">75%</strong></p>
+                </div>
+                <div class="skill-description">
+                    <div class="skill-name left"><strong>MongoDB</strong></div>
+                    <div class="skill-progress right">
+                        <div class="progress"></div>
+                    </div>
+                    <p><strong class="skill-percentage right" id="progress-value">90%</strong></p>
+                </div>
+                <div class="skill-description">
+                    <div class="skill-name left"><strong>React</strong></div>
+                    <div class="skill-progress right">
+                        <div class="progress"></div>
+                    </div>
+                    <p><strong class="skill-percentage right" id="progress-value">75%</strong></p>
+                </div>
+                <div class="skill-description">
+                    <div class="skill-name left"><strong>Django</strong></div>
+                    <div class="skill-progress right">
+                        <div class="progress"></div>
+                    </div>
+                    <p><strong class="skill-percentage right" id="progress-value">75%</strong></p>
+                </div>
+                <div class="skill-description">
+                    <div class="skill-name left"><strong>Flask</strong></div>
+                    <div class="skill-progress right">
+                        <div class="progress"></div>
+                    </div>
+                    <p><strong class="skill-percentage right" id="progress-value">75%</strong></p>
+                </div>
+                <div class="skill-description">
+                    <div class="skill-name left"><strong>Git</strong></div>
+                    <div class="skill-progress right">
+                        <div class="progress"></div>
+                    </div>
+                    <p><strong class="skill-percentage right" id="progress-value">75%</strong></p>
+                </div>
+                <div class="skill-description">
+                    <div class="skill-name left"><strong>Docker</strong></div>
+                    <div class="skill-progress right">
+                        <div class="progress"></div>
+                    </div>
+                    <p><strong class="skill-percentage right" id="progress-value">75%</strong></p>
+                </div>
+        </section>  
     </main>
     <footer>
         <div class="flex-container">
@@ -74,6 +168,18 @@
         function hideSidebar() {
             sidebar.style.display = 'none'
         }
+        //For skill-section progress bar
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressContainers = document.querySelectorAll('.skill-description');
+
+            progressContainers.forEach(container => {
+                const progressValueElement = container.querySelector('.skill-percentage');
+                const progress = container.querySelector('.progress')
+
+                const percentage = parseInt(progressValueElement.innerText.replace('%', ''), 10);
+                progress.style.width = percentage + '%';
+            });
+        });
     </script>
 </body>
 </html>
