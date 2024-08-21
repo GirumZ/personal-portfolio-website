@@ -62,7 +62,7 @@ nav ul{
     margin-left: auto;
 }
 
-.header-navbar button{
+.header-navbar button, .hero-description button{
     padding: 0.5rem;
     border: 0;
     border-radius: 1rem;
@@ -73,7 +73,7 @@ nav ul{
     
 }
 
-.header-navbar ul button:hover{
+.header-navbar ul button:hover, .hero-description button:hover{
     background-color: rgb(170, 255, 0);
     color: #003366;
     cursor: pointer;
@@ -156,9 +156,71 @@ nav a{
     }
 }
 
+/*---MAIN---*/
+
 main{
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
+section{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-section{
+    max-height: fit-content;
+    
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.hero-description{
+    max-width: 400px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column; 
+}
+.hero-description h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.hero-description p{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+.hero-name{
+    color: yellowgreen;
+}
+.hero-description button{
+    width: fit-content;
+}
+.hero-image  img{
+    
+    border-radius: 50%;
+}
+@media(max-width: 700px){
+    .hero-section{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-image img{
+        margin-left: 20%;
+        margin-bottom: 20px;
+        max-width: 400px;
+    }
+    .hero-description{
+        margin: 0 20px;
+    }
+    .hero-description button{
+        align-self: center;
+    }
+}
+
 /*-----FOOTER----*/
 
 footer{
