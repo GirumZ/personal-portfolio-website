@@ -18,9 +18,12 @@ body{
 /*------HEADER-----*/
 
 header{
+    position: fixed;
+    background-color: #003366;
     width: 100%;
+    height: 80px;
     display: flex;
-    margin-top: 15px;
+    
     align-items: center;
     
 }
@@ -172,6 +175,7 @@ section{
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 100px;
 }
 
 /*----HERO-SECTION----*/
@@ -263,7 +267,7 @@ section{
 
 .skills-section{
     height: fit-content;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -338,7 +342,7 @@ section{
 
 .projects-section{
     height: fit-content;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -409,8 +413,8 @@ section{
 
 .contact-section{
     height: fit-content;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;

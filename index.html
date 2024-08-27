@@ -14,24 +14,24 @@
         <nav class="header-navbar">
             <ul class="side-bar">
                 <li onclick=hideSidebar() class="close-icon"><img src="images/back-icon.svg" alt="menu-icon" width="26px" height="26px"></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <button>Download CV</button>
             </ul>
             <ul>
-                <li class="hide-on-mobile"><a href="#">About Me</a></li>
-                <li class="hide-on-mobile"><a href="#">Skills</a></li>
-                <li class="hide-on-mobile"><a href="#">Projects</a></li>
-                <li class="hide-on-mobile"><a href="#">Contact</a></li>
+                <li class="hide-on-mobile"><a href="#about">About Me</a></li>
+                <li class="hide-on-mobile"><a href="#skills">Skills</a></li>
+                <li class="hide-on-mobile"><a href="#projects">Projects</a></li>
+                <li class="hide-on-mobile"><a href="#contact">Contact</a></li>
                 <button class="hide-on-mobile">Download CV</button>
                 <li onclick=showSidebar() class="menu-icon"><img src="images/menu-icon.svg" alt="menu-icon" width="30px" height="30px"></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero-section">
+        <section class="hero-section" id="hero">
             <div class="hero-description">
                     <h1>Hello, I'm <span class="hero-name">Girum</span></h1>
                     <p>A software developer crafting seamless digital experiences through code. 
@@ -42,7 +42,7 @@
                 <img src="images/pro-image.webp" alt="" width="60%" height="auto">
             </div>
         </section> 
-        <section class="about-section">
+        <section class="about-section" id="about">
             <h2>A Little About Me</h2>
             <div class="text-container">
                 <p>
@@ -54,7 +54,7 @@
                 </p>
             </div>
         </section> 
-        <section class="skills-section">
+        <section class="skills-section" id="skills">
             <h2>My skill set</h2>
             <div class="skills-container">
                 
@@ -136,7 +136,7 @@
                     <p><strong class="skill-percentage right" id="progress-value">75%</strong></p>
                 </div>
         </section>
-        <section class="projects-section">
+        <section class="projects-section" id="projects">
             <h2>Projects</h2>
             <div class="projects-container">
                 <div class="project-card">
@@ -202,7 +202,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <h2>Get In touch</h2>
             <div class="contact-container">
                 <address class="contact-address">
